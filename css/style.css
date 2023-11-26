@@ -171,6 +171,12 @@ header .text {
 
   color: rgb(0, 0, 0);
   box-shadow: 10px 10px 20px;
+
+  transition: transform .1s ease-in-out;
+}
+
+.thru-the-yrs [class*="card-"]:hover {
+  transform: scale(110%);
 }
 
 .thru-the-yrs [class*="card-"] h1 {
