@@ -6,10 +6,10 @@ var {
 } = OverlayScrollbarsGlobal;
 
 // simple initialization with an element
-const osInstance = OverlayScrollbars(document.querySelector('body'), {
-    scrollbars : {
-        theme: 'os-theme-light',
-    }
+const osInstance = OverlayScrollbars(document.querySelector("body"), {
+  scrollbars: {
+    theme: "os-theme-light",
+  },
 });
 
 function isInViewport(element) {
@@ -24,8 +24,10 @@ function isInViewport(element) {
 }
 
 const essayTitle = document.querySelector("section.essay h2");
-const scrolldownOverlay = document.querySelector(".scrolldown-overlay")
+const scrolldownOverlay = document.querySelector(".scrolldown-overlay");
 
-window.addEventListener("scroll", function() {
-  isInViewport(essayTitle) ? scrolldownOverlay.style.visibility = "hidden" : scrolldownOverlay.style.visibility='visible'
-})
+window.addEventListener("scroll", function () {
+  isInViewport(essayTitle)
+    ? (scrolldownOverlay.style.opacity = "0")
+    : (scrolldownOverlay.style.opacity = "1");
+});

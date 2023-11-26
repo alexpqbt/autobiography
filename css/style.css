@@ -90,6 +90,8 @@ header .scrolldown-overlay {
   animation-duration: .6s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+
+  transition: opacity .2s ease-in-out;
 }
 
 @keyframes upndown {
