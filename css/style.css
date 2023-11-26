@@ -1,0 +1,276 @@
+*,
+::before,
+::after {
+  border: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "KG Ten Thousand Reasons";
+  src: url("../font/KGTenThousandReasons.woff2") format("woff2"),
+    url("../font/KGTenThousandReasons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  color: #fdfffc;
+  font-family: "KG Ten Thousand Reasons", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 80%;
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+a {
+  color: #fdfffc;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+header {
+  background-color: #3e4e4b;
+  background-image: url(../img/magnify-girl.png);
+  background-size: cover;
+  height: 100vh;
+
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+header .text {
+  text-align: center;
+  margin-left: 6rem;
+}
+
+.essay {
+  background-color: #2b3737;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 7em;
+}
+
+.container {
+  /* width: 90%; */
+  padding: 4em 7em;
+}
+
+.essay .text-container {
+  display: flex;
+  align-items: center;
+  margin: 1.2em 0;
+}
+
+.essay h2 {
+  align-self: flex-start;
+  margin-bottom: 1.6em;
+}
+
+.essay p {
+  margin: 1.2em 0;
+  font-weight: lighter;
+}
+
+.essay .drop-cap::first-letter {
+  float: left;
+  line-height: 50px;
+  font-size: 45px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: -15px;
+}
+
+.text-one img {
+  height: auto;
+  width: 400px;
+
+  color: rgb(28, 28, 28);
+  box-shadow: 10px 10px 20px;
+
+  margin: 0 12px;
+  margin-left: 3.6em;
+}
+
+.thru-the-yrs {
+  background-color: #191e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1em 7em;
+}
+
+.thru-the-yrs .container {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.thru-the-yrs h2 {
+  margin-bottom: 1.6em;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.thru-the-yrs [class*="card-"] {
+  width: 280px;
+  /* border: 1px solid white; */
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding: 1rem 0;
+
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 10px 20px;
+}
+
+.thru-the-yrs [class*="card-"] h1 {
+  color: #fdfffc;
+  margin: 0.9em 0;
+}
+
+.thru-the-yrs [class*="card-"] img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 100% 5%;
+}
+
+.thru-the-yrs [class*="card-"] ul {
+  margin-top: 1em;
+}
+
+.thru-the-yrs [class*="card-"] li {
+  color: #fdfffc;
+}
+
+.cards .card-1 {
+  background-color: #3e4e3e;
+}
+
+.cards .card-2 {
+  background-color: #2b372b;
+}
+
+.cards .card-3 {
+  background-color: #2b3737;
+}
+
+.myself {
+  margin-bottom: 4rem;
+}
+
+.analysis {
+  margin-top: 4rem;
+}
+
+.analysis [class*="card-"] h1 {
+  color: #fdfffc;
+  margin: 0.6rem auto;
+  text-align: center;
+  font-size: large;
+}
+
+.analysis [class*="card-"] p {
+  color: #fdfffc;
+  margin: 1rem;
+  text-align: center;
+  /* margin-top: auto; */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 12px;
+
+  font-size: small;
+}
+
+.personality-test {
+  background-color: #2b3737;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personality-test img {
+  width: 100%;
+}
+
+.mbti,
+.big5 {
+  padding: 0 7em;
+}
+
+.mbti p,
+.big5 p {
+  margin-top: 1.6rem;
+}
+
+.mbti blockquote {
+  border-left: 6px solid rgba(255, 255, 255, 0.5);
+  padding-left: 2rem;
+}
+
+.opinion {
+  margin-top: 3.2em;
+}
+
+.big5-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big5-container img {
+  margin-top: 5rem;
+  width: 800px;
+}
