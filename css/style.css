@@ -63,6 +63,29 @@ a {
 	background-color: #555;
 }
 
+nav {
+  background-color: rgba(0,0,0,.35);
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  padding: 1rem 0;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  font-size: smaller;
+  font-style: normal;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: "↩ ";
+}
+  
 header {
   background-color: #3e4e4b;
   background-image: url(../img/magnify-girl2-inf_v2.GIF);
