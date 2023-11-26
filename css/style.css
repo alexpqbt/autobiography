@@ -130,6 +130,12 @@ header .text {
 
   margin: 0 12px;
   margin-left: 3.6em;
+
+  transition: transform .1s ease-in-out;
+}
+
+.text-one img:hover {
+  transform: scale(110%);
 }
 
 .thru-the-yrs {
