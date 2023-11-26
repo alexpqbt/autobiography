@@ -80,6 +80,23 @@ header .text {
   margin-left: 6rem;
 }
 
+header .scrolldown-overlay {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation-name: upndown;
+  animation-duration: .6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes upndown {
+  from {bottom: 1%;}
+  to {bottom: 2.2%;}
+}
+
 .essay {
   background-color: #2b3737;
 
