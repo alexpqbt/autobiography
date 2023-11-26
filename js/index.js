@@ -25,9 +25,14 @@ function isInViewport(element) {
 
 const essayTitle = document.querySelector("section.essay h2");
 const scrolldownOverlay = document.querySelector(".scrolldown-overlay");
+const homeTitle = document.querySelector("header .text")
 
 window.addEventListener("scroll", function () {
   isInViewport(essayTitle)
     ? (scrolldownOverlay.style.opacity = "0")
     : (scrolldownOverlay.style.opacity = "1");
 });
+
+homeTitle.addEventListener("animationend", function () {
+  scrolldownOverlay.style.opacity = "1"
+})
