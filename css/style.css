@@ -304,6 +304,16 @@ header .scrolldown-overlay {
 .mbti blockquote {
   border-left: 6px solid rgba(255, 255, 255, 0.5);
   padding-left: 2rem;
+
+  color: rgb(212, 212, 212);
+}
+
+.mbti .author {
+  font-style: italic;
+}
+
+.mbti .author::before {
+  content: '- ';
 }
 
 .opinion {
