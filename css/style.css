@@ -252,14 +252,6 @@ header .scrolldown-overlay {
   background-color: #2b3737;
 }
 
-.myself {
-  margin-bottom: 4rem;
-}
-
-.analysis {
-  margin-top: 4rem;
-}
-
 .analysis [class*="card-"] h1 {
   color: #fdfffc;
   margin: 0.6rem auto;
