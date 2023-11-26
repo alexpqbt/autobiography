@@ -75,9 +75,20 @@ header {
   align-items: center;
 }
 
+@keyframes showOnLoad {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 header .text {
   text-align: center;
   margin-left: 6rem;
+
+  animation: 1s ease-out 0s 1 showOnLoad;
 }
 
 header .scrolldown-overlay {
