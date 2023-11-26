@@ -331,3 +331,10 @@ header .scrolldown-overlay {
   margin-top: 5rem;
   width: 800px;
 }
+
+footer {
+  background-color: #3e4e4b;
+  padding: 1.4rem 5rem;
+  text-align: center;
+  font-size: small;
+}
