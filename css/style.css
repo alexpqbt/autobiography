@@ -64,15 +64,18 @@ a {
 }
 
 nav {
-  background-color: rgba(0,0,0,.35);
+  background-color: rgba(0,0,0,.6);
   width: 100%;
   position: fixed;
   top: 0;
+  opacity: 0;
 
   padding: 1rem 0;
 
   display: flex;
   justify-content: space-evenly;
+
+  transition: opacity 0.25s ease-out, top 0.2s ease-out;
 }
 
 nav a {
@@ -80,6 +83,10 @@ nav a {
   font-style: normal;
   font-weight: lighter;
   text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
 }
 
 nav a::before {
@@ -102,6 +109,9 @@ header {
   0% {
     opacity: 0%;
   }
+  55% {
+    opacity: 0%;
+  }
   100% {
     opacity: 100%;
   }
@@ -111,7 +121,7 @@ header .text {
   text-align: center;
   margin-left: 6rem;
 
-  animation: 1.6s ease-out 0s 1 showOnLoad;
+  animation: 3.2s ease-out 0s 1 showOnLoad;
 }
 
 header .scrolldown-overlay {
