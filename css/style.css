@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -16,8 +19,10 @@
 
 html {
   color: #fdfffc;
-  font-family: "KG Ten Thousand Reasons", sans-serif;
-  letter-spacing: 0.2em;
+  /* font-family: "KG Ten Thousand Reasons", sans-serif; */
+  /* font-family: 'Amatic SC', sans-serif; */
+  font-family: 'Grandstander', cursive;
+  letter-spacing: 0.4px;
 }
 
 body::-webkit-scrollbar {
@@ -99,7 +104,7 @@ header {
   /* background-size: cover; */
   height: 100vh;
 
-  font-size: 24px;
+  font-size: 1.8em;
 
   display: flex;
   align-items: center;
@@ -187,19 +192,22 @@ header .scrolldown-overlay {
 .essay h2 {
   align-self: flex-start;
   margin-bottom: 1.6em;
+  font-size: 2.2em;
 }
 
 .essay p {
   margin: 1.2em 0;
   font-weight: lighter;
+  font-size: 1.4em;
 }
 
 .essay .drop-cap::first-letter {
   float: left;
-  line-height: 50px;
-  font-size: 45px;
-  padding: 5px;
-  margin-right: 5px;
+  line-height: 35px;
+  font-size: 2.4em;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 1px;
   margin-bottom: -15px;
 }
 
@@ -240,6 +248,7 @@ header .scrolldown-overlay {
 .thru-the-yrs h2 {
   margin-bottom: 1.6em;
   text-align: center;
+  font-size: 2.2em;
 }
 
 .cards {
@@ -270,6 +279,7 @@ header .scrolldown-overlay {
 .thru-the-yrs [class*="card-"] h1 {
   color: #fdfffc;
   margin: 0.9em 0;
+  font-size: 1.6em;
 }
 
 .thru-the-yrs [class*="card-"] img {
@@ -285,6 +295,8 @@ header .scrolldown-overlay {
 
 .thru-the-yrs [class*="card-"] li {
   color: #fdfffc;
+  font-size: larger;
+  font-weight: lighter;
 }
 
 .cards .card-1 {
@@ -299,11 +311,15 @@ header .scrolldown-overlay {
   background-color: #2b3737;
 }
 
+.analysis h2 {
+  font-size: 2.2em;
+}
+
 .analysis [class*="card-"] h1 {
   color: #fdfffc;
   margin: 0.6rem auto;
   text-align: center;
-  font-size: large;
+  font-size: 1.6em;
 }
 
 .analysis [class*="card-"] p {
@@ -314,7 +330,8 @@ header .scrolldown-overlay {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 12px;
 
-  font-size: small;
+  font-size: large;
+  font-weight: lighter;
 }
 
 .personality-test {
@@ -338,6 +355,14 @@ header .scrolldown-overlay {
 .mbti p,
 .big5 p {
   margin-top: 1.6rem;
+
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+
+.mbti h1,
+.big5 h1 {
+  font-size: 2.2em;
 }
 
 .mbti blockquote {
