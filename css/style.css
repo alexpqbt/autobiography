@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 ::before,
@@ -21,7 +21,7 @@ html {
   color: #fdfffc;
   /* font-family: "KG Ten Thousand Reasons", sans-serif; */
   /* font-family: 'Amatic SC', sans-serif; */
-  font-family: 'Grandstander', cursive;
+  font-family: "Grandstander", cursive;
   letter-spacing: 0.4px;
 }
 
@@ -48,28 +48,25 @@ a {
   font-weight: bold;
 }
 
-#style-1::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
+#style-1::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 
 nav {
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   position: fixed;
   top: 0;
@@ -97,7 +94,7 @@ nav a:hover {
 nav a::before {
   content: "↩ ";
 }
-  
+
 header {
   /* background-color: #3e4e4b; */
   /* background-image: url(../img/magnify-girl2-inf_v2.GIF); */
@@ -150,7 +147,7 @@ header .scrolldown-overlay {
   transform: translate(-50%, -50%);
 
   animation-name: upndown;
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 
@@ -161,8 +158,12 @@ header .scrolldown-overlay {
 }
 
 @keyframes upndown {
-  from {bottom: 1%;}
-  to {bottom: 2.2%;}
+  from {
+    bottom: 1%;
+  }
+  to {
+    bottom: 2.2%;
+  }
 }
 
 .essay {
@@ -221,7 +222,7 @@ header .scrolldown-overlay {
   margin: 0 12px;
   margin-left: 3.6em;
 
-  transition: transform .1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .text-one img:hover {
@@ -269,7 +270,7 @@ header .scrolldown-overlay {
   color: rgb(0, 0, 0);
   box-shadow: 10px 10px 20px;
 
-  transition: transform .1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .thru-the-yrs [class*="card-"]:hover {
@@ -377,7 +378,7 @@ header .scrolldown-overlay {
 }
 
 .mbti .author::before {
-  content: '- ';
+  content: "- ";
 }
 
 .opinion {
