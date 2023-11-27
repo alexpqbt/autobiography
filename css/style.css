@@ -48,6 +48,10 @@ a {
   font-weight: bold;
 }
 
+p {
+  line-height: 1.6rem;
+}
+
 #style-1::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
