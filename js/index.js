@@ -71,9 +71,13 @@ const homeTitle = document.querySelector("header .text")
 const navbar = document.querySelector("nav")
 
 window.addEventListener("scroll", function () {
-  isInViewport(essayTitle)
-  ? (scrolldownOverlay.style.opacity = "0")
-  : (scrolldownOverlay.style.opacity = "1");
+  if (isInViewport(essayTitle)) {
+    scrolldownOverlay.style.opacity = "0"
+    homeTitle.style.opacity = "0"
+  } else {
+    scrolldownOverlay.style.opacity = "1"
+    homeTitle.style.opacity = "1"
+  }
 });
 
 let prevScrollpos = window.scrollY;

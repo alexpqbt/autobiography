@@ -134,6 +134,8 @@ header .text {
   margin-left: 6rem;
 
   animation: 3.2s ease-out 0s 1 showOnLoad;
+
+  transition: opacity 0.9s ease-out;
 }
 
 header .scrolldown-overlay {
