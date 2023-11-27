@@ -168,7 +168,7 @@ header .scrolldown-overlay {
 
 .essay {
   background-color: #2b3737;
-  background-image: url(../img/tinified/essay_bg-resized.png);
+  background-image: url(../assets/img/tinified/essay_bg-resized.png);
   background-size: contain;
 
   display: flex;
