@@ -191,6 +191,8 @@ header .scrolldown-overlay {
 .essay .text-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-flow: row wrap-reverse;
   margin: 1.2em 0;
 }
 
@@ -218,7 +220,8 @@ header .scrolldown-overlay {
 
 .text-one img {
   height: auto;
-  width: 450px;
+  width: 100%;
+  max-width: 300px;
 
   color: rgb(28, 28, 28);
   box-shadow: 10px 10px 20px;
