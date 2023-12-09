@@ -19,6 +19,7 @@
 
 html {
   color: #fdfffc;
+  background-color: #2b3737;
   /* font-family: "KG Ten Thousand Reasons", sans-serif; */
   /* font-family: 'Amatic SC', sans-serif; */
   font-family: "Grandstander", cursive;
@@ -424,4 +425,12 @@ footer img {
   width: 24px;
   margin: 0 0.5rem;
   margin-top: 0.6rem;
+}
+
+.suggestion-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
